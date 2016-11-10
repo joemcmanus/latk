@@ -1,0 +1,121 @@
+body {
+	background:#ffffff;
+	font-family:"Courier New";
+	font-size:8px;
+}
+
+a:link {color: #000000; text-decoration:none;  }
+a:active {color: #000000; text-decoration:none; }
+a:visited {color: #000000; text-decoration:none;  }
+a:hover {color: #000000; text-decoration:underline; }
+
+table, th, td
+{
+	border: 0px solid black;
+}
+
+table
+{
+	border-collapse:collapse;
+}
+
+td
+{
+	text-align:left;
+}
+
+p
+{
+	color:black;
+	text-align:center;
+} 
+
+#menu, #menu  td { text-align:center; vertical-align:top; }
+#main, #main  td { text-align:center; }
+#banner, #banner td { text-align:left; }
+
+#nav, #nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+}
+
+#nav a {
+	display: block;
+	width: 10em;
+}
+
+#nav li { /* all list items */
+	float: left;
+	width: 10em; /* width needed or else Opera goes nuts */
+}
+
+#nav li ul { /* second-level lists */
+	position: absolute;
+	background: #DCDCDC;
+	width: 10em;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+}
+
+#nav li ul ul { /* third-and-above-level lists */
+	margin: -1em 0 0 10em;
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+
+#content {
+	clear: left;
+	color: #ccc;
+}
+
+label
+{
+width: 14em;
+float: left;
+text-align: right;
+margin-right: 0.5em;
+display: block
+}
+
+.submit input
+{
+margin-left: 4.5em;
+} 
+
+input
+{
+color: Black;
+background: #D8D8D8;
+border: 1px solid #DCDCDC;
+width: 25em;
+}
+
+.submit input
+{
+color: black;
+background: #D8D8D8;
+border: 2px outset #dCDCDC;
+width: 10em;
+} 
+
+fieldset
+{
+border: 1px solid #781351;
+width: 34em
+}
+
+legend
+{
+color: black;
+background: #D8D8D8;
+border: 1px solid black;
+padding: 2px 6px
+} 
+
